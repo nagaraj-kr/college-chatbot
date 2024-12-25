@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="static/css/constyle.css" rel="stylesheet" type="text/css">
+           <!-- Bootstrap CSS from CDN -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <title>Contact Us</title>
+        <style>
+            body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll due to overflows */
+}
+.form-control{
+margin: 20px 30px 20px 0;
+}
+.container-fluid {
+    padding: 0; /* Remove additional padding */
+}
+
+label{
+    font-weight: bold;
+}
+fieldset {
+    border: 5px solid  #f44336;
+
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+    margin-top: 0;
+
+
+}
+.mynavalign li a{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    width: 100%;
+}
+
+legend {
+    font-weight: bold;
+    padding: 25px;
+    width: 45%;
+}
+.textdetails{
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size:30px;
+    width: 100%;
+
+}
+body{
+    width: fit-content;
+}
+.mynavalter {
+    background-color: white;
+    border-radius: 4px; /* Optional, for rounded corners */
+    width: 30px; /* Optional, adjust size */
+    height: 3px; /* Optional, adjust thickness */
+}
+.mynavalign li a{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    width: 100%;
+}
+.touch{
+     font-weight: bold;
+    padding-top: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    width: 45%;
+    font-size: 27px;
+}
+        </style>
+    </head>
+    <body class="default">
+      <section class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid text-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mynavalter"></span>
+                    </button>
+                    <div class="collapse navbar-collapse myalternav" id="navbarNav">
+                        <ul class="navbar-nav ms-auto justify-content-center w-100 mynavalign">
+                            <li class="nav-item"><a class="nav-link text-light" href="/index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/courses.html">COURSE</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/placement.html">PLACEMENT</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/contactus.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- Container for Content -->
+        <div class="container-fluid bg-dark text-light">
+            <!-- First Row: Title -->
+            <div class="row text-center my-2">
+                <div class="col bg-dark text-light pt-3">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+
+            <!-- Second Row: Intro Text -->
+            <div class="row">
+                <div class="col-12 mw-100  text-center ">
+                    <p>Thank you for your interest in connecting with us! Whether you have questions, feedback, or need assistance, we're here to help. Simply fill out the form below with your contact information and a brief message, and our dedicated team will respond to you promptly. We look forward to hearing from you and assisting you in any way we can!</p>
+                </div>
+            </div>
+
+            <!-- Third Row: Contact Form -->
+            <div class="row">
+                <!-- Form Column -->
+                <div class="col-12 col-md-6 px-4">
+                    <form>
+                        <fieldset>
+                            <legend>Send Message</legend>
+                            <!-- First Name -->
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" class="form-control" />
+                            </div>
+
+                            <!-- Last Name -->
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" class="form-control" />
+                            </div>
+
+                            <!-- Email ID -->
+                            <div class="form-group">
+                                <label for="email">Email ID</label>
+                                <input type="email" id="email" class="form-control" />
+                            </div>
+
+                            <!-- Comments -->
+                            <div class="form-group">
+                                <label for="comments">Comments</label>
+                                <textarea id="comments" class="form-control"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" type="button">Submit</button>
+
+</div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- Side Column: Additional Info or Placeholder -->
+                <div class="col-12 col-md-6 px-4">
+                    <h5 class="touch">TOUCH WITH US</h5>
+                       <div class="col px-5">
+                    <h5>Contact Us</h5>
+                    <p>KLNCE, Pottaplayam, Sivagangai</p>
+                    <p>Email: klnce@gmail.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col p-5">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="m-2 p-3 "><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="m-2 p-3"><i class="fab fa-twitter fa-2x "></i></a>
+                        <a href="#" class="m-2 p-3"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="m-2 p-3"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS and Popper.js from CDN (optional, for features like dropdowns, modals, etc.) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+    chat-icon="https:&#x2F;&#x2F;img.icons8.com&#x2F;?size=100&ampid=79UfeEN6JkZ8&ampformat=png&ampcolor=000000"
+  chat-title="College-Queries"
+  agent-id="a2024e55-8e53-4fc3-8fba-095d08020781"
+  language-code="en"
+></df-messenger>
+    </body>
+</html>

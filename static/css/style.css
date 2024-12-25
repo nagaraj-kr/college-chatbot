@@ -1,0 +1,197 @@
+
+/*--------------campus-----------------*/
+/*
+.campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius:  10px;
+    margin bottom:30px;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.campus-col img{
+    width: 100%;
+}
+
+.layer{
+    background:transparent;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+*/
+
+.image{
+    width:100%;
+    height: 120px;
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header{
+     min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/static/images/about.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.mynavalign li a{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    width: 100%;
+}
+.navbar-brand{
+    padding: 0;
+}
+
+.navbar navbar-expand-lg navbar-light bg-light{
+    padding: 0;
+}
+
+/*.imagebac{
+   background-image: url("images/about.png") !important;
+       background-size: cover; /* Or use contain
+            background-repeat: no-repeat;
+            background-position: center;
+
+
+}*/
+.imagebac h1{
+  font-size: 35px;
+    font-family:'Poppins';
+    color: white;
+  padding: 50px;
+
+}
+.imagebac p{
+     margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+
+}
+/* Campus Section */
+.campus {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus-col {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    border-radius: 10px; /* Keep images cleanly styled */
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(226, 0, 0, 0.7);
+}
+
+.layer h5 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h5 {
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .campus {
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .campus .row {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;   /* Center the items */
+        gap: 20px;             /* Add spacing between items */
+    }
+
+    .campus-col {
+        width: 90%;            /* Adjust width for better fit on mobile */
+        margin-bottom: 20px;
+    }
+
+    .layer h5 {
+        font-size: 20px;       /* Adjust font size for mobile */
+    }
+
+    .card {
+        width: 100%;           /* Ensure cards occupy full width */
+    }
+}
+
+.card{
+    transition: all 0.2%;
+    border: none;
+
+}
+.card:hover{
+    transform: scale(1.10);
+}
+ .shadow-hover {
+    transition: box-shadow 0.3s ease;
+  }
+
+  .shadow-hover:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow on hover */
+  }

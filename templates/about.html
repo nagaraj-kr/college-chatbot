@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/aboutstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>KLN COLLEGE OF ENGINEERING</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="#">Admissions</a></li>
-                <li><a href="#">Departments</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+     <section class="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <div class="container-fluid text-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon mynavalter"></span>
+                    </button>
+                    <div class="collapse navbar-collapse myalternav" id="navbarNav">
+                        <ul class="navbar-nav ms-auto justify-content-center w-100 mynavalign">
+                            <li class="nav-item"><a class="nav-link text-light" href="/index.html">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/about.html">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/courses.html">COURSE</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/placement.html">PLACEMENT</a></li>
+                            <li class="nav-item"><a class="nav-link text-light" href="/contactus.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
 
-    <main>
+    <main class="container py-5">
         <section class="about">
-            <h1>About Our College</h1>
-            <img src="images/student.jpg" alt="Students">
-            
+            <h1 class="mb-4">About Our College</h1>
+            <img src="/static/images/about23.jpg" alt="Students" class="img-fluid mb-4 w-100 rounded">
+
             <h2>Our History</h2>
             <p>Our college was founded in 1900 with the mission to provide quality education to students from all backgrounds. Over the past century, we have grown from a small local college to a renowned institution with a diverse student body from all over the world.</p>
-            
+
             <h2>Our Mission</h2>
             <p>We aim to foster a learning environment that encourages critical thinking, creativity, and personal growth. Our mission is to empower students with the knowledge and skills needed to succeed in their chosen fields and to contribute positively to society.</p>
 
@@ -50,17 +57,19 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 KLN College of Engineering. All Rights Reserved.</p>
+    <footer class="bg-dark text-white py-3 text-center">
+        <p class="mb-0">&copy; 2024 KLN College of Engineering. All Rights Reserved.</p>
     </footer>
-  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-    <df-messenger
-        intent="WELCOME"
-        chat-icon="https://img.freepik.com/free-vector/chatbot-chat-message-vectorart_78370-4104.jpg"
-        chat-title="KLNCE-CHATBOT"
-        agent-id="bc471366-2b9b-47c4-85a5-4d6d82530a67"
-        language-code="en">
-    </df-messenger>
+   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="College-Queries"
+  agent-id="a2024e55-8e53-4fc3-8fba-095d08020781"
+  chat-icon="https:&#x2F;&#x2F;img.icons8.com&#x2F;?size=100&ampid=79UfeEN6JkZ8&ampformat=png&ampcolor=000000"
+  language-code="en"
+></df-messenger>
 </body>
 </html>

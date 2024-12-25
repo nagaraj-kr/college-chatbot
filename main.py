@@ -132,6 +132,28 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request})
+@app.get("/about.html", response_class=HTMLResponse)
+async def about_page(request: Request):
+    return templates.TemplateResponse("about.html", {"request": request})
+
+@app.get("/placement.html", response_class=HTMLResponse)
+async def placement_page(request: Request):
+    return templates.TemplateResponse("placement.html", {"request": request})
+
+@app.get("/courses.html", response_class=HTMLResponse)
+async def placement_page(request: Request):
+    return templates.TemplateResponse("courses.html", {"request": request})
+
+@app.get("/contactus.html", response_class=HTMLResponse)
+async def placement_page(request: Request):
+    return templates.TemplateResponse("contactus.html", {"request": request})
+@app.get("/index.html", response_class=HTMLResponse)
+async def read_root(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
+
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
+
 
 if __name__ == "__main__":
     import uvicorn

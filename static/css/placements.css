@@ -1,0 +1,11 @@
+.mynavalter {
+    background-color: white;
+    border-radius: 4px; /* Optional, for rounded corners */
+    width: 30px; /* Optional, adjust size */
+    height: 3px; /* Optional, adjust thickness */
+}
+.mynavalign li a{
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    width: 100%;
+}
